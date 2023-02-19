@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
-* main -A C-program that prints a string followed by a new line to standard error
+* main - C-program prints a string followed by a new line to standard error
 *
 * Return: Always 1 (Success)
 */
