@@ -1,0 +1,7 @@
+C is a high level readable, maintainable and portable programming language
+C files are saved with the extension .c
+C files need to be compiled for the computer to understand and execute them
+A C-file is called a source code
+An executable C-file is called a binary code
+This project deals on understanding the basics of creating, writing and executing a C-file
+It is a friendly introduction to C programming language
