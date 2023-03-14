@@ -40,7 +40,7 @@ free(a);
 return (NULL);
 }
 }
- 
+
 for (m = 0; m < height; m++)
 {
 for (n = 0; n < width; n++)
