@@ -24,9 +24,9 @@ for (i = 0; i < n; i++)
 {
 if (separator == NULL)
 {
-printf("%d", va_arg(ap, int));
+  printf("%d", va_arg(ap, int));
 }
-else if (i < n - 1)
+else if (separator != NULL && i < n - 1)
 {
 printf("%d%s", va_arg(ap, int), separator);
 }
