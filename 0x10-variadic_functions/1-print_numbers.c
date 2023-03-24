@@ -26,7 +26,7 @@ if (separator == NULL)
 {
 printf("%d", va_arg(ap, int));
 }
-if (i < n - 1)
+if (i != (n - 1))
 {
 printf("%d%s", va_arg(ap, int), separator);
 }
