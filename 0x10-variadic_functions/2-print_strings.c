@@ -10,7 +10,8 @@
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-unsigned int counter;
+unsigned int i;
+char *str;
 va_list ptn;
 
 if (separator == NULL)
@@ -18,21 +19,18 @@ separator = "";
 
 va_start(ptn, n);
 
-for (counter = 0; counter < n; counter++)
-{
-char *str = va_arg(ptn, char *);
+for (i = 0; i < n; i++)
 {
 if (str == NULL)
 str = "(nil)";
+{
+if (i != (n - 1))
+{
+printf("%s%s", va_arg(ptn, char *), separator);
 }
 else
-{ 
-printf("%s", str);
-}
 {
-if (counter != (n - 1))
-{
-printf("%s", separator);
+printf("%s", va_arg(ptn, char *));
 }
 }
 }
