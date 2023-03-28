@@ -14,25 +14,17 @@ unsigned int i;
 char *str;
 va_list ptn;
 
-if (separator == NULL)
-separator = "";
-
 va_start(ptn, n);
 
 for (i = 0; i < n; i++)
 {
+str = va_arg(ptn, char *);
 if (str == NULL)
-str = "(nil)";
-{
-if (i < n - 1)
-{
-printf("%s%s", va_arg(ptn, char *), separator);
-}
+printf("(nil)");
 else
-{
-printf("%s", va_arg(ptn, char *));
-}
-}
+printf("%s", str);
+if (i != (n - 1) && separator != NULL)
+printf("%s", separator);
 }
 
 printf("\n");
