@@ -24,7 +24,7 @@ for (i = 0; i < n; i++)
 if (str == NULL)
 str = "(nil)";
 {
-if (i != n - 1)
+if (i < n - 1)
 {
 printf("%s%s", va_arg(ptn, char *), separator);
 }
